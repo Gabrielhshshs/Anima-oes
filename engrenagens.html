@@ -18,12 +18,19 @@
             align-items: center;
             margin: 0px;
         }
+        .conteudo
+        {
+            width: 950px;
+            height: 630px;
+            background-color: aqua;
+            position: relative;
+        }
         .E1
         {
             position: absolute;
             top: 0px;
             left: 0px;
-            animation: gira1 10s infinite linear;
+            animation: gira1 10s infinite linear alternate;
         }
         @keyframes gira1 {
             0%   { rotate: 0deg;}
@@ -34,18 +41,11 @@
             position: absolute;
             top: 120px;
             left: 450px;
-            animation: gira2 10s infinite linear;
+            animation: gira2 10s infinite linear alternate;
         }
         @keyframes gira2 {
             0%   { rotate: 0deg;}
             100% { rotate: -360deg;}
-        }
-        .conteudo
-        {
-            width: 950px;
-            height: 630px;
-            background-color: aqua;
-            position: relative;
         }
     </style>
 </head>
