@@ -6,11 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENGRENA BRASIL</title>
     <style>
+        body
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+            margin: 0px;
+        }
+        .E1
+        {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            animation: gira1 10s infinite linear;
+        }
+        @keyframes gira1 {
+            0%   { rotate: 0deg;}
+            100% { rotate: 360deg;}
+        }
         .E2
         {
             position: absolute;
             top: 120px;
             left: 450px;
+            animation: gira2 10s infinite linear;
+        }
+        @keyframes gira2 {
+            0%   { rotate: 0deg;}
+            100% { rotate: -360deg;}
+        }
+        .conteudo
+        {
+            width: 950px;
+            height: 630px;
+            background-color: aqua;
+            position: relative;
         }
     </style>
 </head>
