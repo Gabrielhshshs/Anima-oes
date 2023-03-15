@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneira</title>
+    <style>
+        body
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+            margin: 0px;
+        }
+        .conteudo
+        {
+            width: 950px;
+            height: 630px;
+            background-color: grey;
+            position: relative;
+        }
+        .torneira
+        {
+            position: absolute;
+            z-index: 1;
+        }
+        .gota
+        {
+            position: absolute;
+            top: 150px;
+            left: 298px;
+            animation: gota 0.5s infinite;
+            z-index: 0;
+        }
+        @keyframes gota {
+            0%   { top: 150px;  }
+            100% { opacity: 0;top:430px }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="conteudo">
+        <img src="torneira.png" class="torneira">
+        <img src="gota.png" class="gota">
+    </div> 
+    
+</body>
+</html>
